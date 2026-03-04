@@ -140,13 +140,20 @@ export default function Home() {
 	return (
 		<div className="relative w-screen h-screen overflow-hidden bg-[#FF006E]">
 			<canvas ref={canvasRef} className="absolute inset-0" />
-			<div className="relative z-10 flex items-center justify-center w-full h-full pointer-events-none">
+			<div className="relative z-10 flex flex-col items-center justify-center w-full h-full gap-8">
 				<h1
 					style={{ fontFamily: "var(--font-eb-garamond)" }}
-					className="text-6xl md:text-8xl font-bold uppercase tracking-widest text-black mix-blend-multiply select-none"
+					className="text-6xl md:text-8xl font-bold uppercase tracking-widest text-black mix-blend-multiply select-none pointer-events-none"
 				>
 					Iona OssaMain
 				</h1>
+				<a
+					href="https://game.ionaossamain.com"
+					style={{ fontFamily: "var(--font-eb-garamond)" }}
+					className="px-8 py-3 bg-black text-white uppercase tracking-widest text-sm font-bold border-2 border-black hover:bg-white hover:text-black transition-colors duration-150 select-none"
+				>
+					Play a Game
+				</a>
 			</div>
 		</div>
 	);
